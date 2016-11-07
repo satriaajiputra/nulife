@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login">
+	<div class="main-login">
+		<h2 class="title">Admin Panel</h2>
+		<form action="">
+			<div class="form-group">
+				<input type="text" class="form-control" name="username">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="password">
+			</div>
+			<div class="form-group">
+				<input type="checkbox" name="remember" id="remember">
+				<label for="remember">Remember me</label>
+			</div>
+			<div class="alert alert-warning">
+				<button class="alert-btn" data-role="close" type="button">X</button>
+				<b>Error!</b>
+				<p>Password is wrong, please type a right password</p>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-login btn-block">Log In</button>
+			</div>
+		</form>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script>
+		$('button[data-role="close"]').on('click', function(e) {
+			$(this).parent().slideUp();
+		});
+	</script>
+</body>
+</html>

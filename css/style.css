@@ -93,12 +93,52 @@ a:hover {
    font-weight:600;
 }
 
+.green-color {
+  color: #1BBD36;
+}
+
 /*===========================
   Menu and Navigation
 ============================ */
+.navbar-custom {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,.1);
+}
+.navbar-custom .navbar-brand {
+  height: auto;
+}
 .navigation  {
   background-color:#fff;
   padding:0;
+}
+.navbar-inner>li {
+  display: inline-block;
+  margin-right: -3px;
+}
+.navbar-inner>li>a {
+  color: #333;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+.navbar-inner>li>a:hover, .navbar-inner>li>a:active, .navbar-inner>li>a:focus {
+  background: transparent;
+}
+.navbar-inner li > a.active, .navbar-inner>li>a:hover {
+  color: #1BBD36;
+  border-radius:0;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand h1 {
@@ -112,49 +152,6 @@ a:hover {
 }
 .navbar-brand h1 span {
   color: #1BBD36;
-}
-
-.menu {
-  font-size:12px;
-  float:right;
-  text-transform:uppercase;
-  font-weight:700;  
-}
-
-.menu ul.nav-tabs li {
-  color:#000; 
-}
-
-.nav-tabs {
-  border-bottom: 0;
-}
-.nav-tabs > li {
-  float: left;
-  margin-bottom: 0;
-}
-.nav-tabs > li > a {  
-  border-radius:0;
-  color:#333;
-  padding:30px;
-}
-
-.nav-tabs > li > a:hover {  
-  color: #1BBD36;
-  border-color: #fff #fff #fff;
-  border-radius:0;
-  background-color:#fff; 
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-.nav-tabs > li > a.active {
-  color: #1BBD36;
-  border-radius:0;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
 }
 
 
@@ -1179,7 +1176,7 @@ ul.sidebar-gallery {
 }
 
 a.scrollup{
-    color:#fff;
+  color:#fff;
   height:40px;
   width:40px;
   font-size:12px;
@@ -1192,6 +1189,7 @@ a.scrollup{
   opacity:0,5;
   border-radius:50%;
   z-index:999;
+  background: #1BBD36;
 }
 a.scrollup:hover{
   opacity:1;
